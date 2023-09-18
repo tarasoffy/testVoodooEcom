@@ -45,9 +45,9 @@ export const addToCartFun = (item) => {
 
     const productInfoTextStyle = "text-white font-bold text-[14px]"
 
-    wrapper.className="wrapper-product-cart w-[364px] h-[74px] flex mt-10"
+    wrapper.className="wrapper-product-cart max-w-[364px] h-[74px] flex mt-10"
     cardInfo.className="flex w-full"
-    cardWrapperImage.className = "w-[74px] h-[74px] rounded border border-white"
+    cardWrapperImage.className = "max-w-[74px] max-h-[74px] rounded border"
     cardInfoWrapper.className = "ml-[18px] flex flex-col justify-between"
     productName.className = productInfoTextStyle + " truncate w-52"
     productPrice.className = productInfoTextStyle

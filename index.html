@@ -36,7 +36,8 @@
                         <div class="flex">
                             <img src="./icons/alert-circle.svg" alt="" srcset="">
                             <p class="text-[16px] font-bold text-white ml-[6px]">ALPHA</p>
-                            <p class="ml-12 text-white font-medium">Important info regarding our service</p>
+                            <p class="ml-12 text-white font-medium max-sm:hidden">Important info regarding our service</p>
+                            <p class="ml-12 text-white font-medium hidden max-sm:block">Important info</p>
                         </div>
                         <div class="flex items-center">
                             <img class="arrow-svg" src="./icons/Vector.svg" alt="" srcset="">
@@ -54,30 +55,33 @@
             </div>
         </div>
       </main>
-      <footer class="h-[266px] border-t w-full border-black flex items-center justify-center max-sm:h-[598px] p-12">
-        <div class="w-[1272px] flex justify-between max-sm:flex-col">
-            <img class="w-[82px] h-[82px]" src="./icons/Logomark.svg" alt="">
-            <div class="flex flex-col">
-                <a class="text-[14px] font-bold" href="">FAQ</a>
-                <a class="mt-5 mb-5 text-[14px] font-bold" href="">RETURNS</a>
-                <a class="text-[14px] font-bold" href="">CONTACT</a>
-            </div>
-            <div class="flex flex-col">
-                <a class="text-[14px] font-bold" href="">TERMS & CONDITIONS</a>
-                <a class="mt-5 mb-5 text-[14px] font-bold" href="">PRIVACY POLICY</a>
-                <a class="text-[14px] font-bold" href="">COOKIE POLICY</a>
-                <a class="mt-5   text-[14px] font-bold" href="">COOKIE SETTINGS</a>
-            </div>
-            <div class="flex flex-col">
-                <a class="text-[14px] font-bold" href="">ABOUT SECOND CHANCE</a>
-                <a class="mt-5 mb-5 text-[14px] font-bold" href="">CAREER</a>
-                <a class="text-[14px] font-bold" href="">FACEBOOK</a>
-                <a class="mt-5   text-[14px] font-bold" href="">INSTAGRAM</a>
+      <footer class="border-t w-full border-black flex items-center justify-center max-sm:h-[598px] p-12">
+        <div class="w-[1272px] flex justify-between max-sm:flex-col-reverse">
+            <img class="w-[82px] h-[82px] hidden max-sm:block" src="./icons/Logomark.svg" alt="">
+            <div class="flex w-full justify-between max-sm:flex-col max-sm:mt-12">
+                <img class="w-[82px] h-[82px] max-sm:hidden" src="./icons/Logomark.svg" alt="">
+                <div class="flex flex-col max-sm:mt-12">
+                    <a class="text-[14px] font-bold" href="">FAQ</a>
+                    <a class="mt-5 mb-5 text-[14px] font-bold" href="">RETURNS</a>
+                    <a class="text-[14px] font-bold" href="">CONTACT</a>
+                </div>
+                <div class="flex flex-col max-sm:mt-12">
+                    <a class="text-[14px] font-bold" href="">TERMS & CONDITIONS</a>
+                    <a class="mt-5 mb-5 text-[14px] font-bold" href="">PRIVACY POLICY</a>
+                    <a class="text-[14px] font-bold" href="">COOKIE POLICY</a>
+                    <a class="mt-5   text-[14px] font-bold" href="">COOKIE SETTINGS</a>
+                </div>
+                <div class="flex flex-col max-sm:mt-12 mb-12">
+                    <a class="text-[14px] font-bold" href="">ABOUT SECOND CHANCE</a>
+                    <a class="mt-5 mb-5 text-[14px] font-bold" href="">CAREER</a>
+                    <a class="text-[14px] font-bold" href="">FACEBOOK</a>
+                    <a class="mt-5   text-[14px] font-bold" href="">INSTAGRAM</a>
+                </div>
             </div>
         </div>
         
       </footer>
-      <div class="purchases fixed top-0 right-0 w-[445px]  h-[937px] z-50 bg-[#1E1E1E] hidden">
+      <div class="purchases fixed top-0 right-0 w-full max-w-[445px]  h-full z-50 bg-[#1E1E1E] hidden">
         <div class="pl-[39px] pr-[44px] mb-[13px]">
             <div class="w-full flex justify-between mt-[49px] border-b border-white">
                 <p class="text-[24px] font-bold mb-[22px] text-white">Shopping Cart</p>
@@ -85,6 +89,7 @@
                     <img class="close cursor-pointer" src="./icons/Close.svg" alt="">
                 </div>
             </div>
+            <!-- <p class="text-white empty-cart hidden">Your cart is empty</p> -->
         </div>
         <div class="wrapepr-purchases w-full flex flex-col items-center">
             <div class="pl-[39px] pr-[44px] mb-[49px] w-full">
